@@ -21,12 +21,16 @@ for tc in range(T):
     print('#{}'.format(tc + 1), end=' ')
     V, E = map(int, input().split())
     data = list(map(int, input().split()))
+    s = set(data)
     G = [[0 for _ in range(V+1)] for _ in range(V+1)]
     visited = [0 for _ in range(V+1)]
     for i in range(0, len(data), 2):
         G[data[i]][data[i+1]] = 1
-    for i in range(V+1):
-        for j in range(V+1):
-            if G[i][j] == 0 and G[j][i] == 1 and visited[j] == 0:
-                bfs(j)
+    for i in s:
+        chk = 0
+        for j in s:
+            if G[j][i] != 0:
+                chk = 1
+        if chk == 0:
+            bfs(i)
     print()

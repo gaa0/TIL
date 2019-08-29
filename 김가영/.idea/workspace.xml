@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38e350a7-5e1b-4dd1-aa65-42c4cb60dac7" name="Default Changelist" comment="" />
+    <list default="true" id="38e350a7-5e1b-4dd1-aa65-42c4cb60dac7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/work/1. List/김가영_0822/작업순서.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/1. List/김가영_0822/작업순서.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +14,7 @@
     <session id="493217072">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="9" />
@@ -38,20 +40,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="43965" />
+          <entry key="py" value="44039" />
           <entry key="txt" value="166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="166" />
-          <entry key="Python" value="43965" />
+          <entry key="Python" value="44039" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7083333">
+    <splitter split-orientation="horizontal" split-proportion="0.8417112">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -103,9 +105,9 @@
             <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/작업순서.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="450">
-                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                  <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
                   <folding>
-                    <marker date="1567067511018" expanded="true" signature="11:303" ph="..." />
+                    <marker date="1567068538157" expanded="true" signature="11:303" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -117,7 +119,11 @@
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/작업순서_input.txt">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="5" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -224,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -604,15 +610,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" weight="0.6698718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26973686" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38157895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26927254" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.660152" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -795,8 +801,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/work/1. List/김가영_0822/작업순서.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="100" />
+          <line>28</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -809,9 +815,10 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="    queue = []&#10;" />
-        <watch expression="visited" language="Python" />
-        <watch expression="G" language="Python" />
+        <watch expression="front" language="Python" />
+        <watch expression="Q" language="Python" />
+        <watch expression="rear" language="Python" />
+        <watch expression="C" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -1205,9 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/작업순서_input.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/work/1. List/190828/연습3_BFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1228,12 +1232,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/작업순서_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/작업순서.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding>
-            <marker date="1567067511018" expanded="true" signature="11:303" ph="..." />
+            <marker date="1567068538157" expanded="true" signature="11:303" ph="..." />
           </folding>
         </state>
       </provider>
