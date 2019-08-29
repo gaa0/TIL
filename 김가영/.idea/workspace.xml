@@ -2,72 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38e350a7-5e1b-4dd1-aa65-42c4cb60dac7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190827/사각형 칠하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190827/순열_함수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190828/BFS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190828/연습1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190828/연습1_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190828/연습3_BFS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190828/연습3_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/190828/원형 큐.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/factorial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/fibo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/fibo3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/ladder1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/괄호의 짝 검사.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/깊이우선탐색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/두더지 굴.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190821/스택 구현.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190823/미로1-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190823/미로1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190826/BabyGin_perm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190826/계산기3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190826/부분집합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190826/순열_재귀.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190826/연습문제1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/20190826/연습문제2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/GNS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/atoi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/dal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/fibo2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/h.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/h2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/nasa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/pari.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/prac1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/prac2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/prac3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/sw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0813/sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0813/선택정렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0816/부분집합의 합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0816/이진탐색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0816/특별한 정렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0820/글자수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0820/회문.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0822/괄호검사.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0822/그래프경로.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0822/반복문자 지우기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0822/종이붙이기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0827/Forth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0827/미로.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0827/배열최소합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0827/토너먼트 카드게임.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0829/미로의 거리.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0829/회전.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/배열최소합_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/부분집합 생성하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/부분집합2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/순차검색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/암호화.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/원자소멸 시뮬레이션 2019.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/1. List/전치 행렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/prac2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/1. List/김가영_0829/Contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,156 +27,81 @@
         <counts>
           <entry key="cfg" value="2" />
           <entry key="ipynb" value="2" />
-          <entry key="py" value="147" />
-          <entry key="txt" value="84" />
+          <entry key="py" value="148" />
+          <entry key="txt" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="BuildoutCfg" value="2" />
           <entry key="IPNB" value="2" />
-          <entry key="PLAIN_TEXT" value="84" />
-          <entry key="Python" value="147" />
+          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="Python" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="42733" />
-          <entry key="txt" value="112" />
+          <entry key="py" value="43336" />
+          <entry key="txt" value="166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="112" />
-          <entry key="Python" value="42733" />
+          <entry key="PLAIN_TEXT" value="166" />
+          <entry key="Python" value="43336" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.65918803">
+    <splitter split-orientation="horizontal" split-proportion="0.6474359">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.2488">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/190828/BFS.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state>
-                      <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-                      <folding>
-                        <marker date="1566973090722" expanded="true" signature="13:509" ph="..." />
-                        <marker date="1566973090722" expanded="true" signature="393:394" ph="..." />
-                        <marker date="1566973090722" expanded="true" signature="393:395" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/190828/연습1_3.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="30">
-                      <caret line="2" selection-start-line="1" selection-end-line="2" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0827/미로.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="645">
-                      <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/미로의 거리.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="165">
-                      <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-                      <folding>
-                        <marker date="1567041324432" expanded="true" signature="11:600" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/190828/연습3_BFS.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="15">
-                      <caret line="1" selection-start-line="1" selection-end-line="2" />
-                      <folding>
-                        <marker date="1566973583511" expanded="true" signature="11:16" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="420">
-                      <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-                      <folding>
-                        <marker date="1567042683853" expanded="true" signature="11:269" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/work/1. List/190828/원형 큐.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="405">
-                      <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="75">
-                      <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-                      <folding>
-                        <marker date="1567056331346" expanded="true" signature="160:901" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-89">
-                      <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-                      <folding>
-                        <marker date="1567056331346" expanded="true" signature="91:142" ph="..." />
-                        <marker date="1567056331346" expanded="true" signature="160:901" ph="..." />
-                        <marker date="1567056331346" expanded="true" signature="390:901" ph="..." />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/work/1. List/190828/연습3_BFS.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="2" />
+                  <folding>
+                    <marker date="1566973583511" expanded="true" signature="11:16" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                  <folding>
+                    <marker date="1567042683853" expanded="true" signature="11:269" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/Contact.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+                  <folding>
+                    <marker date="1567063536168" expanded="true" signature="11:267" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기_input.txt">
+            <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/Contact_input.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="1" selection-start-column="1" selection-end-column="1" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -248,8 +109,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리_input.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+                <state relative-caret-position="30">
+                  <caret line="2" selection-start-line="2" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -286,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/work/1. List/20190821/괄호의 짝 검사.py" />
-        <option value="$PROJECT_DIR$/work/1. List/20190821/factorial.py" />
         <option value="$PROJECT_DIR$/work/1. List/20190821/fibo.py" />
         <option value="$PROJECT_DIR$/work/1. List/20190821/fibo2.ipynb" />
         <option value="$PROJECT_DIR$/work/1. List/fibo2.py" />
@@ -337,6 +196,8 @@
         <option value="$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리.py" />
         <option value="$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기.py" />
         <option value="$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기_input.txt" />
+        <option value="$PROJECT_DIR$/work/1. List/김가영_0829/Contact_input.txt" />
+        <option value="$PROJECT_DIR$/work/1. List/김가영_0829/Contact.py" />
       </list>
     </option>
   </component>
@@ -450,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.피자 굽기">
+  <component name="RunManager" selected="Python.Contact">
     <configuration name="미로의 거리" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="김가영" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -556,7 +417,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="연습3_BFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Contact" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="김가영" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -564,11 +425,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/1. List/190828" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/1. List/김가영_0829" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/1. List/190828/연습3_BFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/1. List/김가영_0829/Contact.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -683,19 +544,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.연습3_BFS" />
       <item itemvalue="Python.미로의 거리" />
       <item itemvalue="Python.노드의 거리" />
       <item itemvalue="Python.피자 굽기" />
       <item itemvalue="Python.원형 큐" />
+      <item itemvalue="Python.Contact" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Contact" />
         <item itemvalue="Python.피자 굽기" />
         <item itemvalue="Python.원형 큐" />
         <item itemvalue="Python.노드의 거리" />
         <item itemvalue="Python.미로의 거리" />
-        <item itemvalue="Python.연습3_BFS" />
       </list>
     </recent_temporary>
   </component>
@@ -740,8 +601,8 @@
       <window_info content_ui="combo" id="Project" order="2" weight="0.6698718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26754385" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.49342105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26973686" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48859936" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -907,14 +768,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="front" language="Python" />
-        <watch expression="Q" language="Python" />
-        <watch expression="rear" language="Python" />
-        <watch expression="C" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -971,24 +824,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/괄호검사.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <marker date="1566436902095" expanded="true" signature="135:222" ph="..." />
-            <marker date="1566436902095" expanded="true" signature="252:822" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0822/괄호검사_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/work/1. List/20190823/미로1_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1259,13 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/work/1. List/190827/순열_함수.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1294,6 +1122,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <marker date="1567056331346" expanded="true" signature="160:901" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/1. List/190828/원형 큐.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/노드의 거리_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work/1. List/190828/연습3_BFS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1314,28 +1173,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/1. List/190828/원형 큐.py">
+    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/Contact_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="285">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기_input.txt">
+    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/Contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/1. List/김가영_0829/피자 굽기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <marker date="1567056331346" expanded="true" signature="91:142" ph="..." />
-            <marker date="1567056331346" expanded="true" signature="160:901" ph="..." />
-            <marker date="1567056331346" expanded="true" signature="390:901" ph="..." />
+            <marker date="1567063536168" expanded="true" signature="11:267" ph="..." />
           </folding>
         </state>
       </provider>
