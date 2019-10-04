@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h2 class="text-center">NEW</h2>
+    <form action="/articles/create/" method="GET">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name='title'><br>
+        <label for="content">Content</label><br>
+        <input type="text" id="content" name='content'><br>
+        <input type="submit" value='글쓰기'>
+    </form>
+{% endblock %}
