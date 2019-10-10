@@ -18,13 +18,18 @@
         <input type="submit" value="댓글 작성" class="btn btn-warning">
     </form>
     <hr>
+    <p><b>{{ comments|length }}개의 댓글</b></p>
+    <hr>
     <p><b>댓글 목록</b></p>
     {% for comment in comments %}
         <p>{{ comment.content }}</p>
         <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST">
             {% csrf_token %}
             <input type="submit" value="댓글 삭제" class="btn btn-danger">
+            <a href="{% url 'articles:comments_update' article.pk comment.pk %}">[댓글 수정]</a>
         </form>
+    {% empty %}
+        <p><b>댓글이 없네요,,,, 댓글 좀 써주세요</b></p>
     {% endfor %}
     <hr>
     <!-- <a href="/articles/{{ article.pk }}/delete/">[글 삭제]</a><br> -->
