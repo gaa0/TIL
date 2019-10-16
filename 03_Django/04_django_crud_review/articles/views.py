@@ -78,6 +78,7 @@ def update(request, article_pk):
     if request.method == 'POST':
         article.title = request.POST.get('title')
         article.content = request.POST.get('content')
+        article.image = request.FILES.get('image')
         article.save()
         return redirect('articles:detail', article.pk)
     # GET 요청일 때
