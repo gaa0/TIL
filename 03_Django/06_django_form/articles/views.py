@@ -3,10 +3,14 @@ from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
 from .models import Article, Comment
 from .forms import ArticleForm, CommentForm
+import hashlib
 from IPython import embed
 
 def index(request):
-    # embed()
+    # if request.user.is_authenticated:
+    #     gravatar_url = 
+    # else:
+    #     gravatar_url = None
     # 1. session 정보에서 visits_num이라는 키로 접근해 값을 가져옴.
     # 해당하는 키가 없으면 0을 가져옴.
     visits_num = request.session.get('visits_num', 0)
@@ -17,9 +21,7 @@ def index(request):
     # embed()
 
     articles = Article.objects.all() #articles에 전체 목록을 다 가져옴
-    context = {
-        'articles': articles, 'visits_num': visits_num,
-    }
+    context = {'articles': articles, 'visits_num': visits_num, }
     return render(request, 'articles/index.html', context)
 
 @login_required
@@ -42,6 +44,8 @@ def create(request):
             # content = form.cleaned_data.get('content')
             # article = Article.objects.create(title=title, content=content)
             # embed()
+            article = form.save(commit=False)
+            article.user_id = request.user.id
             article = form.save()
             # embed()
             return redirect('articles:detail', article.pk)
@@ -65,29 +69,31 @@ def detail(request, article_pk): # urls 파일에 따라서 인자 이름 정하
 
 @require_POST
 def delete(request, article_pk):
+    # if request.user.id == article_pk:
     if request.user.is_authenticated:
         article = get_object_or_404(Article, pk=article_pk)
-        article.delete()
+        if request.user == article.user:
+            article.delete()
     return redirect('articles:index') # redirect -> GET 요청
     # return redirect('articles:detail', article.pk)
 
 @login_required
 def update(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
-    if request.method == 'POST':
-        # instance-> 수정의 대상이 되는 특정한 글 객체
-        form = ArticleForm(request.POST, instance=article)
-        if form.is_valid():
-            # article.title = form.cleaned_data.get('title')
-            # article.content = form.cleaned_data.get('content')
-            # article.save()
-            # embed()
-            form.save()
-            # embed()
-            return redirect('articles:detail', article.pk)
+    if request.user == article.user:
+        if request.method == 'POST':
+            # instance-> 수정의 대상이 되는 특정한 글 객체
+            form = ArticleForm(request.POST, instance=article)
+            if form.is_valid():
+                # article.title = form.cleaned_data.get('title')
+                # article.content = form.cleaned_data.get('content')
+                # article.save()
+                form.save()
+                return redirect('articles:detail', article.pk)
+        else:
+            form = ArticleForm(instance = article)
     else:
-        form = ArticleForm(instance = article)
-        # embed()
+        return redirect('articles:index')
     context = {'form': form, 'article': article, }
     return render(request, 'articles/form.html', context)
 
@@ -114,6 +120,8 @@ def comments_create(request, article_pk):
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
             comment.article_id = article_pk
+            comment.user_id = request.user.id
+            # embed()
             comment.save()
     return redirect('articles:detail', article_pk)
 
@@ -121,5 +129,6 @@ def comments_create(request, article_pk):
 def comments_delete(request, article_pk, comment_pk):  # urls.py에 종속됨
     if request.user.is_authenticated:
         comment = get_object_or_404(Comment, pk=comment_pk)
-        comment.delete()
+        if request.user == comment.user:
+            comment.delete()
     return redirect('articles:detail', article_pk)
