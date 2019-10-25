@@ -1,6 +1,12 @@
 from django.db import models
 from django.conf import settings
 
+class Hashtag(models.Model):
+    content = models.TextField(unique=True)  # 이 게시글 안에 하나만 존재해야 함.
+
+    def __str__(self):
+        return self.content
+
 class Article(models.Model):
     title = models.CharField(max_length=20)
     content = models.TextField()
@@ -8,6 +14,7 @@ class Article(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="like_articles", blank=True)  # related_name 필수
+    hashtags = models.ManyToManyField(Hashtag, blank=True)
 
     class Meta:
         ordering = ('-pk', )
