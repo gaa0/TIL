@@ -1,0 +1,3 @@
+integer (SightValue) {
+  description (현재 시력 수치)
+}

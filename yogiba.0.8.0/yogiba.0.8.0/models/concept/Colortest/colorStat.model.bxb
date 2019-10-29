@@ -1,0 +1,3 @@
+integer (ColorStat) {
+  description (진행 수치)
+}

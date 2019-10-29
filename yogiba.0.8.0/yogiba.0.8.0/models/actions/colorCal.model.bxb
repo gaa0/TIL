@@ -1,0 +1,25 @@
+action (ColorCal) {
+	type (Constructor)
+	description (값 저장 확인)
+	collect {
+		input (testStart) {
+			type (TestStart)
+			min (Optional) max (One)
+		}
+		input (colorInput){
+			type (ColorInput)
+			min (Optional) max (One)
+		}
+		input (goTest){
+			type (GoTest)
+			min (Optional) max (One)
+		}
+		input (coinCompare){
+			type (CoinCompare)
+			min (Optional) max (One)
+		}
+		
+	}
+	
+	output (ColorArray)
+}

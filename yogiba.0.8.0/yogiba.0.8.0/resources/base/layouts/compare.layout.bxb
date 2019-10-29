@@ -1,0 +1,24 @@
+layout-macro-def (compare) {
+	params {
+		param (size) {
+			type (TestStart)
+			min (Optional) max (Many)
+		}
+	}
+
+  content {
+    image-card {
+      aspect-ratio (1:1)
+      title-area {
+        halign (Start)
+        slot1 {
+          text {
+            value ("보이는 숫자를 읽어주세요.")
+            style (Title_M)
+          }
+        }
+      }
+      image-url("/img/coin.jpg")
+    }
+  }
+}

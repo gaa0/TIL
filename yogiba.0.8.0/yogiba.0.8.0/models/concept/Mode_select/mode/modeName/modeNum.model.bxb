@@ -1,0 +1,8 @@
+enum (ModeNum) {
+  symbol (0)
+  symbol (63)
+  symbol (66)
+  symbol (69)
+
+  description (입력된 검사종류)
+}

@@ -1,0 +1,7 @@
+enum (ModeName) {
+  symbol ("색맹")
+  symbol ("난시")
+  symbol ("시력")
+
+  description (입력된 검사종류)
+}

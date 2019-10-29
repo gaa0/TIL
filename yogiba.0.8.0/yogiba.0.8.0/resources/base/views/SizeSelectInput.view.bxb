@@ -1,0 +1,48 @@
+// input 화면에 대한 보여주는 방식을 설정(https://bixbydevelopers.com/dev/docs/reference/type/input-view)
+input-view {
+	// 입력 화면을 보여주고 싶은 input concept을 지정
+	match: Size(this)
+	message {
+		// input을 받을 시에 보여줄 dialog를 설정
+		template-macro (chooseSizeInput)
+	}
+	render {
+		// 어떻게 화면을 그릴 것인가에 대하여 설정
+		form {
+			// form UI (https://bixbydevelopers.com/dev/docs/reference/type/input-view.render.form)
+			elements {
+				checkbox {
+					id (checkSixtyThree)
+					type (SixtyThree)
+					primary-text (작습니다)
+					secondary-text (사진보다 작습니다.) // 시력테스트 시작.
+					value (63)
+				}
+				checkbox {
+					id (checkSixtySix)
+					type (SixtySix)
+					primary-text (비슷합니다.)
+					secondary-text (사진과 비슷합니다.) // 색맹테스트 시작.
+					value (66)
+				}
+				
+				checkbox {
+					id (checkSixtyNine)
+					type (SixtyNine)
+					primary-text (큽니다.)
+					secondary-text (사진보다 큽니다.) // 난시테스트 시작.
+					value (69)
+				}
+			}
+			on-submit {
+				goal: Size
+				value: Size{
+					sixtyThree: viv.core.FormElement(checkSixtyThree)
+					sixtySix: viv.core.FormElement(checkSixtySix)
+					sixtyNine: viv.core.FormElement(checkSixtyNine)
+				}
+			}
+			submit-button(선택)
+		}
+	}
+}

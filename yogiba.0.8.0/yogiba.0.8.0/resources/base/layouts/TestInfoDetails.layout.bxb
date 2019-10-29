@@ -1,0 +1,85 @@
+layout-macro-def (testinfo-details) {
+	params {
+		param (info) {
+			type (TestStart)
+			min (Optional) max (Many)
+		}
+	}
+	content {
+		if (info.modeName == '시력'){
+			section {
+				title {
+					template ("#{value(info.modeName)} 검사를 시작하겠습니다.")
+				}
+				content {
+					single-line {
+						text {
+							value ("우리 시력 검사도 빨리 만들어보아요.")
+							style (Detail_L)
+						}
+					}
+					paragraph {
+						value ("꺅")
+						style (Detail_L)
+					}
+				}
+			}
+		}
+		else-if (info.modeName == '색맹'){
+			// title-area {
+			//   slot1 {
+			//       text {
+			//           style (Title_L)
+			//           value ("지금부터 #{value(info.modeName)} 검사를 시작하겠습니다.") // Best Eastern Hotels and Resorts
+			//       }
+			//   }
+			//   slot2 {
+			//       single-line {
+			//           text {
+			//               style (Title_M)
+			//               value ("검사를 시작할 준비가 되면 '준비완료'라고 말씀해주세요.") // From $160.00
+			//           }
+			//       }
+			//   }
+			// }
+			section {
+				title {
+					template ("지금부터 #{value(info.modeName)} 검사를 시작하겠습니다.")
+				}
+				
+				content {
+					
+					single-line {
+						text {
+							value ("색각검사")
+							style (Detail_L)
+						}
+					}
+					paragraph {
+						value ("하나하나 해결해가자")
+						style (Detail_L)
+					}
+				}
+			}
+		}
+		else-if (info.modeName == '난시'){
+			section {
+				title {
+					template ("지금부터 #{value(info.modeName)} 검사를 시작하겠습니다.")
+				}
+				content {
+					single-line {
+						text {
+							value ("난시용 안내문입니다.")
+							style (Detail_L)
+						}
+					}
+					paragraph {
+						value ("I am C-Dragon")
+						style (Detail_L)
+					}
+				}
+			}
+		}
+	}
+}

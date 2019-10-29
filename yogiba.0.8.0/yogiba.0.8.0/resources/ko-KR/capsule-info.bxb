@@ -1,0 +1,12 @@
+capsule-info {
+	display-name (요기바)
+	developer-name (SSAFY_Gumi_2_1)
+	icon-asset (/yogiba1.png)
+	description ("눈 검사 캡슐")
+	dispatch-name (요기 바)
+	search-keywords{
+		keyword (tips)
+		keyword (건강)
+		keyword (health)
+	}
+}

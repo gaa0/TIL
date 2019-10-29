@@ -1,0 +1,69 @@
+action (StartMode) {
+	type(Search)
+	description (ㅡㅡ)
+	collect {
+		input (modeinfo) {
+			type (ModeInfo)
+			min (Required) max (One)
+			default-init {
+				intent {
+					goal: ModeSelect
+				}
+			}
+			validate{
+				if (modeinfo.mode.color && modeinfo.mode.sight){
+					replan{
+						intent{
+							goal: ModeSelect
+						}
+					}
+				}
+				else-if (modeinfo.mode.astigm && modeinfo.mode.sight){
+					replan{
+						intent{
+							goal: ModeSelect
+						}
+					}
+				}
+				else-if (modeinfo.mode.color && modeinfo.mode.astigm){
+					replan{
+						intent{
+							
+							goal: ModeSelect
+						}
+					}
+				}
+				else-if(!modeinfo.mode.color && !modeinfo.mode.sight && !modeinfo.mode.astigm){
+					replan{
+						intent{
+							goal: ModeSelect
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	output (ModeName){
+		throws{
+			error (NoResult){
+				on-catch {
+					halt {
+						dialog {
+							template-macro (chooseOneMode)
+						}
+					}
+				}
+			}
+			unknown-error{
+				on-catch {
+					halt {
+						dialog {
+							template-macro (unknownError)
+						}
+					}
+				}
+			}
+		}
+	}
+}

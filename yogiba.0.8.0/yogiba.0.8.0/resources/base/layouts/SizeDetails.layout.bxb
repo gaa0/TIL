@@ -1,0 +1,29 @@
+layout-macro-def (coin-view) {
+  params {
+    param (size) {
+      type (SizeInfo)
+      min (Required) max (One)
+    }
+  }
+  content {
+    single-line{
+      
+    text{
+      value("3")
+    }
+    }
+    // image-card {
+    //   aspect-ratio (1:1)
+    //   image-url ("")
+    //   title-area {
+    //     halign (Start)
+    //     slot1 {
+    //       text {
+    //         value ("사진보다 작습니다.")
+    //         style (Title_M)
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

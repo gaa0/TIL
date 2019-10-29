@@ -1,0 +1,10 @@
+train (t-uesi4gcvkraoek2hfh1cinzoy) {
+  utterance ("[g:FindTest] (색맹)[v:ModeName:색맹]")
+  plan (Y2BmkC8uTkyrjE8vzc2MN4o31KvMT89MStQLSS0uCS5JLCphkMOuwC0zLwWkCJe8b35Kql9ibioDEwMjEDMASUYGEIDyAQ==)
+  last-modified (1572256431352)
+}
+train (t-uon6jv16uooumcvzpe9672zz7) {
+  utterance ("[g:FindTest] (색맹검사)[v:ModeName:색맹]")
+  plan (Y2BmkC8uTkyrjE8vzc2MN4o31KvMT89MStQLSS0uCS5JLCphkMOuwC0zLwWkCJe8b35Kql9ibioDEwMjEDMASUYGEIDyAQ==)
+  last-modified (1572256403695)
+}

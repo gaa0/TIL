@@ -1,0 +1,19 @@
+structure (TestStart) {
+	description (값 검색을 위한 시작점)
+	property (modeName){
+		type (ModeName)
+		min (Required) max (One)
+	}
+	property (colorOutput){
+		type (ColorOutput)
+		min (Optional) max (One)
+	}
+	property (colorArray) {
+		type (ColorArray)
+		min (Optional) max (One)
+	}
+	// property (modeInfo) {
+	// 	type (ModeInfo)
+	// 	min (Optional) max (One)
+	// }
+}

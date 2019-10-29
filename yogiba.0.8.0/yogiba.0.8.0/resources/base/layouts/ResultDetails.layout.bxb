@@ -1,0 +1,521 @@
+	layout-macro-def (result_details) {
+	params {
+		param (info) {
+			type (TestStart)
+			min (Optional) max (Many)
+		}
+	}
+	content {
+		if (info.modeName == '색맹'){
+			if(info.colorArray.colorStat == 1001){
+				paragraph{
+					value("검사를 제대로 해주세요.")
+					style(Title_M)
+				}
+			}
+			else-if (info.colorArray.colorStat == 101){
+				paragraph{
+					value("● 색각 검사를 시작하기 전\n
+								- 검사하는 방의 밝기는 보통의 방 밝기 정도이면 좋습니다.
+								- 안경이나 콘택트렌즈는 착용한 채로 검사를 진행해주세요.
+								- 양쪽 눈으로 검사를 진행해주세요.\n\n
+								● 측정하는 법\n
+								- 총 9개의 이미지가 보여집니다.
+								- 원 안에 있는 숫자를 소리내어 읽어주세요.
+								- 검사 결과는 마지막에 확인하실 수 있습니다.\n\n\n
+								준비가 되셨다면 ▶준비 완료◀라고 말씀해주세요.")
+				}
+			}
+			else-if (info.colorArray.colorStat <= 9){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Start)
+						slot1 {
+							text {
+								value ("보이는 숫자를 읽어주세요.")
+								style (Title_M)
+							}
+						}
+					}
+					image-url("/img/colortest/#{value(info.colorOutput)}.jpg")
+				}
+			}
+			else-if (info.colorArray.colorStat == 10){
+				image-card{
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							if(info.colorArray.normals == 9){
+								text{
+									value("정상입니다.")
+									style (Title_M)
+								}
+							}
+							else-if(info.colorArray.aCBlind == 8){
+								text{
+									value("전색맹이 의심됩니다.")
+									style (Title_M)
+								}
+							}
+							else-if(info.colorArray.aCWeak == 8){
+								text{
+									value("전색약이 의심됩니다.")
+									style (Title_M)
+								}
+							}
+							else-if(info.colorArray.rGBlind == 8){
+								text{
+									value("적녹색맹이 의심됩니다.")
+									style (Title_M)
+								}
+							}
+							else-if(info.colorArray.rGWeak == 8){
+								text{
+									value("적녹색약이 의심됩니다.")
+									style (Title_M)
+								}
+							}
+							else{
+								text {
+									value ("적녹색약이 의심됩니다.")
+									style (Title_M)
+								}
+							}
+						}
+						slot2{
+							single-line{
+								if(info.colorArray.normals == 9){
+									text{
+										value("의심되는 색각이상이 없습니다.")
+										style (Title_M)
+									}
+								}
+								else{
+									text {
+										value ("자세한 검사를 받아보세요.")
+										style (Title_M)
+									}
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text{
+									value("검사가 끝났습니다.")
+									style (Title_M)
+								}
+							}
+						}
+					}
+				image-url("yogiba2.png")
+				}
+			}
+		}
+		else-if (info.modeName == '시력'){
+			if (info.colorArray.colorStat == 100){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("실제 동전과 크기를 비교해주세요.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("실제보다 크면 '크다', 작으면 '작다'")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("같으면 '같다'고 말해주세요.")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("/img/coin.jpg")
+				}
+			}
+			else-if (info.colorArray.colorStat == 1000){
+				paragraph{
+					value("● 시력 검사를 시작하기 전\n
+								- 검사하는 방의 밝기는 보통의 방 밝기 정도이면 좋습니다.
+								- 오른쪽 눈(우안), 왼족 눈(좌안) 순으로 검사를 시작합니다.
+								- 3m 거리에 검사용 기기를 두고 화면을 마주보세요.\n\n
+								● 측정하는 법\n
+								- 숫자가 랜덤으로 나타납니다.
+								- 보이는대로 숫자를 소리내어 읽어주세요.
+								- 검사 결과는 마지막에 확인하실 수 있습니다.\n\n\n
+								오른쪽 눈 시력 측정을 위해 왼쪽 눈을 가려주세요.
+								준비가 되셨다면 ▶준비 완료◀라고 말씀해주세요.")
+				}
+			}
+			else-if (info.colorArray.sightCorrect == 200){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("이제 왼쪽 눈 검사를 시작합니다.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("오른쪽 눈을 가려주세요.")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("▶준비 완료◀라고 말씀해주세요.")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("yogiba2.jpg")
+				}
+			}
+			else-if (info.colorArray.sightCorrect < 100){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("보이는 숫자를 읽어주세요")
+								style (Title_M)
+							}
+						}
+					}
+					image-url("/img/sighttest/#{value(info.colorArray.modeNum)}/#{value(info.colorArray.sightScore)}/#{value(info.colorArray.sightValue)}.jpg")
+				}
+			}
+			else (info.colorArray.sightCorrect == 100){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area{
+						halign (Center)
+						slot1{
+							if (info.colorArray.normals == 40){
+								text{
+									value("왼눈은 0.1이하 입니다.")
+								}
+							}
+							else-if (info.colorArray.normals == 15){
+								text{
+									value("왼눈은 1.5이상 입니다.")
+								}
+							}
+							else-if (info.colorArray.normals < 10){
+								text{
+									value("왼눈은 0.#{value(info.colorArray.normals)}입니다.")
+								}
+							}
+							else{
+								text{
+									value("왼눈은 #{value(info.colorArray.normals)*0.1}입니다.")
+								}
+							}
+						}
+						slot2{
+							single-line{
+								if (info.colorArray.sightScore == 40){
+									text{
+										value("오른눈은 0.1이하 입니다.")
+									}
+								}
+								else-if (info.colorArray.sightScore == 15){
+									text{
+										value("오른눈은 1.5이상 입니다.")
+									}
+								}
+								else-if (info.colorArray.sightScore < 10){
+									text{
+										value("오른눈은 0.#{value(info.colorArray.sightScore)}입니다.")
+									}
+								}
+								else{
+									text{
+										value("오른눈은 #{value(info.colorArray.sightScore)*0.1}입니다.")
+									}
+								}
+							}
+						}
+					}
+				image-url("yogiba1.png")
+				}
+			}
+		}
+		else-if (info.modeName == '난시'){
+			if (info.colorArray.normals == 100){
+				paragraph{
+					value("● 난시 검사를 시작하기 전\n
+								- 검사하는 방의 밝기는 보통의 방 밝기 정도이면 좋습니다.
+								- 오른쪽 눈(우안), 왼족 눈(좌안) 순으로 검사를 시작합니다.
+								- 1m 거리에 검사용 기기를 두고 화면을 마주보세요.\n\n
+								● 측정하는 법\n
+								- 두 이미지를 통해 난시 검사를 진행합니다.
+								- 이미지에 따른 설명을 듣고 대답하시면 됩니다.
+								- 검사 결과는 마지막에 확인하실 수 있습니다.\n\n\n
+								오른쪽 눈 시력 측정을 위해 왼쪽 눈을 가려주세요.
+								준비가 되셨다면 ▶준비 완료◀라고 말씀해주세요.")
+				}	
+			}
+			else-if(info.colorArray.normals == 200){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("1m 거리에서 바라봐주세요.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("진하게 보이는 특정한 선이 있나요?")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("있다면 '예/네', 없다면 '아니오/아니요'")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("/img/as1.jpg")
+				}
+			}
+			else-if(info.colorArray.normals == 300){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("1m 거리에서 바라봐주세요.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("어떤 글자가 정확히 보이시나요?")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("보이면 '예/네', 아니면 '아니오/아니요'")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("/img/as2.jpg")
+				}
+			}
+			else-if (info.colorArray.normals == 400){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("오른쪽 눈 검사가 끝났습니다.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("왼쪽 눈 검사를 시작합니다.")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("▶준비 완료◀라고 말씀해주세요.")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("yogiba2.png")
+				}
+			}
+			else-if(info.colorArray.normals == 500){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1 {
+							text {
+								value ("1m 거리에서 바라봐주세요.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("진하게 보이는 특정한 선이 있나요?")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("있다면 '예/네', 없다면 '아니오/아니요'")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("/img/as1.jpg")
+				}
+			}
+			else-if(info.colorArray.normals == 600){
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Start)
+						slot1 {
+							text {
+								value ("1m 거리에서 바라봐주세요.")
+								style (Title_S)
+							}
+						}
+						slot2{
+							single-line{
+								text {
+									value ("어떤 글자가 정확히 보이시나요?")
+									style (Title_S)
+								}
+							}
+						}
+						slot3{
+							single-line{
+								text {
+									value ("보이면 '예/네', 아니면 '아니오/아니요'")
+									style (Title_S)
+								}
+							}
+						}
+					}
+					image-url("/img/as2.jpg")
+				}
+			}
+			else{
+				image-card {
+					aspect-ratio (1:1)
+					text-position (Below)
+					title-area {
+						halign (Center)
+						slot1{
+							if (info.colorArray.colorAccept == 0){
+								text{
+									value("정상입니다.")
+									style(Title_S)
+								}
+							}
+							else-if (info.colorArray.colorAccept >= 1 || info.colorArray.colorAccept <= 2){
+								text{
+									value("왼쪽 눈이 난시로 의심됩니다.")
+									style(Title_S)
+								}
+							}
+							else-if (info.colorArray.colorAccept == 10){
+								text{
+									value("오른쪽 눈이 난시로 의심됩니다.")
+									style(Title_S)
+								}
+							}
+							else-if (info.colorArray.colorAccept == 20){
+								text{
+									value("오른쪽 눈이 난시로 의심됩니다.")
+									style(Title_S)
+								}
+							}
+							else{
+								text{
+									value("양쪽 눈 모두 난시로 의심됩니다.")
+									style(Title_S)
+								}
+							}
+						}
+						slot2{
+							single-line{
+								if (info.colorArray.colorAccept == 0){
+								text{
+									value("난시가 없습니다.")
+									style(Title_S)
+								}
+							}
+							else{
+								text{
+									value("가까운 병원이나 안경점에 가셔서")
+									style(Title_S)
+								}
+							}
+						}
+					}
+					slot3{
+							single-line{
+								if (info.colorArray.colorAccept == 0){
+									text{
+										value("검사가 끝났습니다.")
+										style(Title_S)
+									}
+								}
+								else{
+									text{
+										value("정확한 검사를 받아보세요.")
+										style(Title_S)
+									}
+								}
+							}
+						}
+					}
+					image-url("yogiba1.png")
+				}
+			}
+		}
+	}
+}		

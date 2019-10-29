@@ -1,0 +1,15 @@
+structure (Size) {
+  description (__DESCRIPTION__)
+	property (sixtyThree) {
+		type (SixtyThree)
+		min (Required)
+	}
+	property (sixtySix){
+		type (SixtySix)
+		min (Required)
+	}
+	property (sixtyNine){
+		type (SixtyNine)
+		min (Required)
+	}
+}

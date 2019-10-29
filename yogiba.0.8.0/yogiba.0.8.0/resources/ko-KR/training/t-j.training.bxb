@@ -1,0 +1,10 @@
+train (t-jee9k4ab76r5d2d79sphkbz0s) {
+  utterance ("[g:FindTest] (난시)[v:ModeName:난시]")
+  plan (Y2BmkC8uTkyrjE8vzc2MN4o31KvMT89MStQLSS0uCS5JLCphkMOuwC0zLwWkCJe8b35Kql9ibioDEwMjEDMASUYGEIDyAQ==)
+  last-modified (1572256436404)
+}
+train (t-jh0t8h7ed1z32biimy2qjbmv9) {
+  utterance ("[g:TestStart:continue] (몰라)[v:GoTest]")
+  plan (Y2BlkC8uTkyrjE8vzc2MN4o31KvMT89MStQLSS0uCS5JLCphkMOuwC0zLwWkiEEBu7xzfk5+kWNRUWIlLhPAKpwTcxhksMu754PNZ2FgZGBiYAbSDFAWI5gFAkxADBQHAA==)
+  last-modified (1571798200805)
+}

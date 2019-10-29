@@ -1,0 +1,3 @@
+integer (SightScore) {
+  description (해당 그림과 맞는지 확인용)
+}

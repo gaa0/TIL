@@ -1,0 +1,3 @@
+integer (ACBlind) {
+  description (전색맹 수치)
+}

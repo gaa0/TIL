@@ -1,0 +1,25 @@
+endpoints {
+	action-endpoints {
+		action-endpoint (StartMode) {
+			accepted-inputs (modeinfo)
+			local-endpoint (startMode.js)
+		}
+		action-endpoint (ModeSelect) {
+			accepted-inputs (mode)
+			local-endpoint (modeSelect.js)
+		}
+		action-endpoint (SizeSelect) {
+			accepted-inputs (size)
+			local-endpoint (sizeSelect.js)
+		}
+		action-endpoint (FindTest) {
+			accepted-inputs (modeName, colorArray)
+			local-endpoint (findTest.js)
+		}
+		action-endpoint (ColorCal) {
+			accepted-inputs (testStart, colorInput, goTest, coinCompare)
+			local-endpoint (colorCal.js)
+		}
+	}
+}
+

@@ -1,0 +1,3 @@
+integer (ColorOutput) {
+	description (색맹검사 변수와 그림 매칭용)
+}

@@ -1,0 +1,3 @@
+integer (Normals) {
+  description (색맹검사 정상 수치, 또는 시력검사 저장용)
+}

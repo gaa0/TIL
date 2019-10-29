@@ -1,0 +1,16 @@
+// result-view {
+// 	match{
+    
+// 		Mode(this)
+// 	}
+// 	message {
+// 		// input을 받을 시에 보여줄 dialog를 설정
+// 		template-macro (chooseSizeInput)
+// 	}
+//   render {
+//     layout-macro (coin-view) {
+//       param ()
+//     }
+//   }
+
+// }

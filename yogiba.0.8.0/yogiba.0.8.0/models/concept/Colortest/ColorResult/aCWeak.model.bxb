@@ -1,0 +1,3 @@
+integer (ACWeak) {
+  description (전색약 수치)
+}

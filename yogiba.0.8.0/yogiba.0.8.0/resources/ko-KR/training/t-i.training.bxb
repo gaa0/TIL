@@ -1,0 +1,5 @@
+train (t-iafjzjhr993lmrx4y45u8sspf) {
+  utterance ("[g:FindTest] (시력검사)[v:ModeName:시력]")
+  plan (Y2BmkC8uTkyrjE8vzc2MN4o31KvMT89MStQLSS0uCS5JLCphkMOuwC0zLwWkCJe8b35Kql9ibioDEwMjEDMASUYGEIDyAQ==)
+  last-modified (1572256404414)
+}

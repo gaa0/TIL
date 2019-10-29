@@ -1,0 +1,3 @@
+integer (SightInput) {
+  description (__DESCRIPTION__)
+}

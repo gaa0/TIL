@@ -1,0 +1,83 @@
+structure (ColorArray) {
+	description (나왔던 것들)
+	property (colorOne) {
+		type (ColorOne)
+		min (Optional) max (One)
+	}
+	property (colorTwo) {
+		type (ColorTwo)
+		min (Optional) max (One)
+	}
+	property (colorThree) {
+		type (ColorThree)
+		min (Optional) max (One)
+	}
+	property (colorFour) {
+		type (ColorFour)
+		min (Optional) max (One)
+	}
+	property (colorFive) {
+		type (ColorFive)
+		min (Optional) max (One)
+	}
+	property (colorSix) {
+		type (ColorSix)
+		min (Optional) max (One)
+	}
+	property (colorSeven) {
+		type (ColorSeven)
+		min (Optional) max (One)
+	}
+	property (colorEight) {
+		type (ColorEight)
+		min (Optional) max (One)
+	}
+	property (colorNine) {
+		type (ColorNine)
+		min (Optional) max (One)
+	}
+	property (colorStat) {
+		type (ColorStat)
+		min (Optional) max (One)
+	}
+	property (colorAccept) {
+		type (ColorAccept)
+		min (Optional) max (One)
+	}
+	property (aCBlind) {
+		type (ACBlind)
+		min (Optional) max (One)
+	}
+	property (aCWeak) {
+		type (ACWeak)
+		min (Optional) max (One)
+	}
+	property (normals) {
+		type (Normals)
+		min (Optional) max (One)
+	}
+	property (rGBlind) {
+		type (RGBlind)
+		min (Optional) max (One)
+	}
+	property (rGWeak) {
+		type (RGWeak)
+		min (Optional) max (One)
+	}
+	property (sightValue) {
+		type (SightValue)
+		min (Optional) max (One)
+	}
+	property (sightScore) {
+		type (SightScore)
+		min (Optional) max (One)
+	}
+	property (sightCorrect) {
+		type (SightCorrect)
+		min (Optional) max (One)
+	}
+	property (modeNum) {
+		type (ModeNum)
+		min (Optional) max (One)
+	}
+}

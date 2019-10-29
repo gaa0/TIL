@@ -1,0 +1,84 @@
+// 결과를 화면에 보여주는 방식을 설정하는 파일 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+	match{
+		TestStart(this)
+	}
+	message {
+		if (this.modeName != 'undefined' &&this.colorArray.colorStat <= 101 && this.colorArray.colorStat >= 100){
+			template ("#{value(this.modeName)}검사"){
+				speech ("#{value(this.modeName)}검사를 시작합니다.")
+			}
+		}
+		else-if(this.colorArray.sightCorrect == 200){
+			template ("시력 검사"){
+				speech ("시력 검사")
+			}
+		}
+		else-if (this.colorArray.normals > 0 && this.colorArray.sightScore > 0 && this.colorArray.sightCorrect == 100){
+			template ("검사 결과"){
+				speech ("검사가 끝났습니다. 결과를 확인해보세요")
+			}
+		}
+		else-if (this.colorArray.normals == 0 && this.colorArray.sightScore > 0){
+			template ("오른눈 검사"){
+				speech ("숫자를 읽어주세요")
+			}
+		}
+		else-if (this.colorArray.normals > 0 && this.colorArray.sightScore > 0){
+			template ("왼눈 검사"){
+				speech ("숫자를 읽어주세요")
+			}
+		}
+		else-if(this.modeName == '색맹' && this.colorOutput == 10){
+			template ("검사 결과"){
+				speech ("검사가 끝났습니다. 결과를 확인해보세요")
+			}
+		}
+		else-if(this.modeName == '색맹'){
+			template ("색맹 검사"){
+				speech ("숫자를 읽어주세요")
+			}
+		}
+		else-if(this.modeName == '난시' && this.colorArray.normals == 200){
+			template ("오른눈 검사"){
+				speech ("진하게 보이는 특정한 선이 있나요?")
+			}
+		}
+		else-if(this.modeName == '난시' && this.colorArray.normals == 300){
+			template ("오른눈 검사"){
+				speech ("글자가 보이나요?")
+			}
+		}
+		else-if(this.modeName == '난시' && this.colorArray.normals == 500){
+			template ("왼눈 검사"){
+				speech ("진하게 보이는 특정한 선이 있나요?")
+			}
+		}
+		else-if(this.modeName == '난시' && this.colorArray.normals == 600){
+			template ("왼눈 검사"){
+				speech ("글자가 보이나요?")
+			}
+		}
+		else-if(this.modeName == '난시' && this.colorArray.normals == 700){
+			template ("검사 결과"){
+				speech ("검사가 끝났습니다 결과를 확인해보세요")
+			}
+		}
+
+
+
+
+		else-if (this.modeName != 'undefined'){
+			template ("#{value(this.modeName)}검사"){
+				speech ("#{value(this.modeName)}검사")
+			}
+		}
+	}
+	render {
+		layout-macro (result_details) {
+			param (info) {
+				expression (this)
+			}
+		}
+	}
+}

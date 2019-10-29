@@ -1,0 +1,38 @@
+action (FindTest) {
+	description (색맹)
+	type(Search)
+	collect { 
+		input (modeName) { 
+			type (ModeName)
+			min (Optional) max (One)
+			default-init {
+				intent {
+					goal: StartMode
+				}
+			}
+		}
+		input(colorArray){
+			type(ColorArray)
+			min (Optional) max (One)
+			default-init{
+				intent{
+					goal: ColorCal
+				}
+			}
+		}
+	}
+	
+	output (TestStart){
+		throws{
+			unknown-error{
+				on-catch {
+					halt {
+						dialog {
+							template ("문제가 생겼네요. 다시 한번 말씀해주세요.")
+						}
+					}
+				}
+			}
+		}
+	}
+}
